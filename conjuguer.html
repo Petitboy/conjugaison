@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="conjuguer.css" rel="stylesheet" type="text/css">
+        <title>Conjuguer</title>
+    </head>
+
+<body>
+	
+	<header class="titre">
+			<h1>Conjuguer</h1>
+			<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+				<form>			
+					<label></label>
+					<select name="niveau" id="niveau">
+						<option value="imparfaitEtre">imparfait être</option>
+						<option value="imparfaitAvoir">imparfait avoir</option>
+						<option value="imparfaitPremierGroupe">imparfait premier groupe</option>
+						<option value="imparfaitPremierGroupeVerbesDifferents">imparfait premier groupe verbes différents</option>
+						<option value="imparfaitFaire">imparfait faire</option>
+						<option value="imparfaitAller">imparfait aller</option>
+						<option value="imparfaitDire">imparfait dire</option>
+						<option value="imparfaitVenir">imparfait venir</option>
+						<option value="imparfaitPouvoir">imparfait pouvoir</option>
+						<option value="imparfaitVoir">imparfait voir</option>
+						<option value="imparfaitVouloir">imparfait vouloir</option>
+						<option value="imparfaitPrendre">imparfait prendre</option>
+						<option value="passeComposeEtre">passé composé être</option>
+						<option value="passeComposeAvoir">passé composé avoir</option>
+						<option value="passeComposePremierGroupe">passé composé premier groupe</option>
+						<option value="passeComposePremierGroupeVerbesDifferents">passé composé premier groupe verbes différents</option>
+						<option value="passeComposeFaire">passé composé faire</option>
+						<option value="passeComposeAller">passé composé aller</option>
+						<option value="passeComposeDire">passé composé dire</option>
+						<option value="passeComposeVenir">passé composé venir</option>
+						<option value="passeComposePouvoir">passé composé pouvoir</option>
+						<option value="passeComposeVoir">passé composé voir</option>
+						<option value="passeComposeVouloir">passé composé vouloir</option>
+						<option value="passeComposePrendre">passé composé prendre</option>
+						<option value="presentEtre">présent être</option>
+						<option value="presentAvoir">présent avoir</option>
+						<option value="presentPremierGroupe">présent premier groupe</option>
+						<option value="presentPremierGroupeVerbesDifferents">présent premier groupe verbes différents</option>
+						<option value="presentFaire">présent faire</option>
+						<option value="presentAller">présent aller</option>
+						<option value="presentDire">présent dire</option>
+						<option value="presentVenir">présent venir</option>
+						<option value="presentPouvoir">présent pouvoir</option>
+						<option value="presentVoir">présent voir</option>
+						<option value="presentVouloir">présent vouloir</option>
+						<option value="presentPrendre">présent prendre</option>						
+						<option value="futurEtre">futur être</option>
+						<option value="futurAvoir">futur avoir</option>
+						<option value="futurPremierGroupe">futur premier groupe</option>
+						<option value="futurPremierGroupeVerbesDifferents">futur premier groupe verbes différents</option>
+						<option value="futurFaire">futur faire</option>
+						<option value="futurAller">futur aller</option>
+						<option value="futurDire">futur dire</option>
+						<option value="futurVenir">futur venir</option>
+						<option value="futurPouvoir">futur pouvoir</option>
+						<option value="futurVoir">futur voir</option>
+						<option value="futurVouloir">futur vouloir</option>
+						<option value="futurPrendre">futur prendre</option>
+					</select>
+				</form>
+				<button onclick="mise_a_zero()">Mise à zéro</button>
+				<button onclick="effacer()">Effacer/Mélanger</button>				
+			</div>			
+			
+	</header>
+	
+	<main>
+		<div id="input_bases"></div>
+		<div style="height: 40px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+			<div style="background-color: #90EE90; width: 45%; font-size: 30px;">Sujet</div>
+			<div style="background-color: #9EEDF0; width: 45%; font-size: 30px;">Verbe</div>
+		</div>
+		<div style="background-color: white; height: 20px;"></div>
+		<div style="height: 40px; display: flex; justify-content: space-around; flex-wrap: wrap;">
+			<div id="input_bases1" style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #90EE90; width: 45%; font-size: 30px;"></div>
+			<div id="input_bases2" style="display: flex; justify-content: space-around; flex-wrap: wrap; background-color: #9EEDF0; width: 45%; font-size: 30px;"></div>
+		</div>
+		<div style="background-color: white; height: 80px;"></div>
+		<div style="display: flex; justify-content: center;">
+			<div id="sujet" style="text-align: end; padding-right: 10px; background-color: white; width: 45%; font-size: 30px;"></div>
+			<div id="verbe" style="text-align: start; padding-left: 10px; background-color: white; width: 45%; font-size: 30px;"></div>
+		</div>
+		
+	</main>	
+						
+	<script src="conjuguer.js"></script>
+</body>
+
+</html>
