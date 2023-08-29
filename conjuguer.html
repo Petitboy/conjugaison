@@ -2,6 +2,15 @@
 
 <html>
     <head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-1MZ2TWL3WN"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-1MZ2TWL3WN');
+		</script>
         <meta charset="utf-8">
         <link href="conjuguer.css" rel="stylesheet" type="text/css">
         <title>Conjuguer</title>
@@ -14,7 +23,8 @@
 			<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 				<form>			
 					<label></label>
-					<select name="niveau" id="niveau">
+					<select name="progressionCPCE" id="progressionCPCE">
+						<option value="progCP">Progression CP CE1 CE2</option>
 						<option value="imparfaitEtre">imparfait être</option>
 						<option value="imparfaitAvoir">imparfait avoir</option>
 						<option value="imparfaitPremierGroupe">imparfait premier groupe</option>
@@ -63,6 +73,45 @@
 						<option value="futurVoir">futur voir</option>
 						<option value="futurVouloir">futur vouloir</option>
 						<option value="futurPrendre">futur prendre</option>
+					</select>
+					<select name="progression CM" id="progressionCM">
+						<option value="progCM">Progression CM1 CM2</option>						
+						<option value="imparfaitdeuxiemeGroupe">imparfait deuxième groupe</option>
+						<option value="imparfaitdeuxiemeGroupeVerbesDifferents">imparfait deuxième groupe verbes différents</option>						
+						<option value="passeComposedeuxiemeGroupe">passé composé deuxième groupe</option>
+						<option value="passeComposedeuxiemeGroupeVerbesDifferents">passé composé deuxième groupe verbes différents</option>						
+						<option value="presentdeuxiemeGroupe">présent deuxième groupe</option>
+						<option value="presentdeuxiemeGroupeVerbesDifferents">présent deuxième groupe verbes différents</option>						
+						<option value="futurdeuxiemeGroupe">futur deuxième groupe</option>
+						<option value="futurdeuxiemeGroupeVerbesDifferents">futur deuxième groupe verbes différents</option>						
+						<option value="passeSimpleEtre">passé simple être</option>
+						<option value="passeSimpleAvoir">passé simple avoir</option>
+						<option value="passeSimplePremierGroupe">passé simple premier groupe</option>
+						<option value="passeSimplePremierGroupeVerbesDifferents">passé simple premier groupe verbes différents</option>
+						<option value="passeSimpleDeuxiemeGroupe">passé simple deuxième groupe</option>
+						<option value="passeSimpleDeuxiemeGroupeVerbesDifferents">passé simple deuxième groupe verbes différents</option>						
+						<option value="passeSimpleFaire">passé simple faire</option>
+						<option value="passeSimpleAller">passé simple aller</option>
+						<option value="passeSimpleDire">passé simple dire</option>
+						<option value="passeSimpleVenir">passé simple venir</option>
+						<option value="passeSimplePouvoir">passé simple pouvoir</option>
+						<option value="passeSimpleVoir">passé simple voir</option>
+						<option value="passeSimpleVouloir">passé simple vouloir</option>
+						<option value="PasseSimplePrendre">passé simple prendre</option>						
+						<option value="plusqueparfaitEtre">plus-que-parfait être</option>
+						<option value="plusqueparfaitAvoir">plus-que-parfait avoir</option>
+						<option value="plusqueparfaitPremierGroupe">plus-que-parfait premier groupe</option>
+						<option value="plusqueparfaitPremierGroupeVerbesDifferents">plus-que-parfait premier groupe verbes différents</option>
+						<option value="plusqueparfaitDeuxiemeGroupe">plus-que-parfait deuxième groupe</option>
+						<option value="plusqueparfaitDeuxiemeGroupeVerbesDifferents">plus-que-parfait deuxième groupe verbes différents</option>						
+						<option value="plusqueparfaitFaire">plus-que-parfait faire</option>
+						<option value="plusqueparfaitAller">plus-que-parfait aller</option>
+						<option value="plusqueparfaitDire">passé simple dire</option>
+						<option value="plusqueparfaitVenir">plus-que-parfait venir</option>
+						<option value="plusqueparfaitPouvoir">plus-que-parfait pouvoir</option>
+						<option value="plusqueparfaitVoir">plus-que-parfait voir</option>
+						<option value="plusqueparfaitVouloir">plus-que-parfait vouloir</option>
+						<option value="plusqueparfaitPrendre">plus-que-parfait prendre</option>						
 					</select>
 				</form>
 				<button onclick="mise_a_zero()">Mise à zéro</button>

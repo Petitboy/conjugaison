@@ -62,7 +62,7 @@ var passeComposeVouloir = ["ai voulu", "as voulu", "a voulu", "a voulu", "avons 
 var passeComposePouvoir = ["ai pu", "as pu", "a pu", "a pu", "avons  pu", "avez pu", "ont pu", "ont pu"];
 var passeComposefaire = ["ai fait", "as fait", "as fait", "a fait", "avons fait", "avez fait", "ont fait", "ont fait"];
 var passeComposeAller = ["suis allé(e)", "es allé(e)", "est allé", "est allée", "sommes allé(e)s", "êtes allé(e)s", "sont allés", "sont allées"];
-var passeComposeDire = ["ai dis", "as dis", "a dit", "a dit", "avons dit", "avez dit", "ont dit", "ont dit"];
+var passeComposeDire = ["ai dit", "as dit", "a dit", "a dit", "avons dit", "avez dit", "ont dit", "ont dit"];
 var passeComposeVoir = ["ai vu", "as vu", "a vu", "a vu", "avons vu", "avez vu", "ont vu", "ont vu"];
 var presentEtre = ["suis", "es", "est", "est", "sommes", "êtes", "sont", "sont"];
 var presentAvoir = ["ai", "as", "a", "a", "avons", "avez", "ont", "ont"];
@@ -88,6 +88,42 @@ var futurAller = ["irai", "iras", "ira", "ira", "irons", "irez", "iront", "iront
 var futurDire = ["dirai", "diras", "dira", "dira", "dirons", "direz", "diront", "diront"];
 var futurPouvoir = ["pourrai", "pourras", "pourra", "pourra", "pourrons", "pourrez", "pourront", "pourront"];
 var futurVoir = ["verrai", "verras", "verra", "verra", "verrons", "verrez", "verront", "verront"];
+var imparfaitdeuxiemeGroupe = ["finissais", "finissais", "finissait", "finissait", "finissions", "finissiez", "finissaient", "finissaient"];
+var imparfaitdeuxiemeGroupeVerbesDifferents = ["bénissais", "fournissais", "jaunissait", "périssait", "remplissions", "réussissiez", "choisissaient", "grandissaient"];
+var passeComposedeuxiemeGroupe = ["ai fini", "as fini", "a fini", "a fini", "avons fini", "avez fini", "ont fini", "ont fini"];
+var passeComposeDeuxiemeGroupeVerbesDifferents = ["ai garanti", "as nourri", "a sali", "a rougi", "avons obéi", "avez mûri", "ont guéri", "ont averti"];
+var presentDeuxiemeGroupe = ["finis", "finis", "finit", "finit", "finissons", "finissez", "finissent", "finissent"];
+var presentDeuxiemeGroupeVerbesDifferents = ["franchis", "rugis", "réussit", "réfléchit", "applaudissons", "aplatissez", "réagissent", "embellissent"];
+var futurDeuxiemeGroupe = ["finirai", "finiras", "finira", "finira", "finirons", "finirez", "finiront", "finiront"];
+var futurDeuxiemeGroupeVerbesDifferents = ["maigrirai", "puniras", "rôtira", "garnira", "ralentirons", "atterrirez", "grossiront", "gémiront"];
+var passeSimpleEtre = ["fus", "fus", "fut", "fut", "fûmes", "fûtes", "furent", "furent"];
+var passeSimpleAvoir = ["eus", "eus", "eut", "eut", "eûmes", "eûtes", "eurent", "eurent"];
+var passeSimplePremierGroupe = ["chantai", "chantas", "chanta", "chanta", "chantâmes", "chantâtes", "chantèrent", "chantèrent"];
+var passeSimplePremierGroupeVerbesDifferents = ["chantai", "parlas", "regarda", "joua", "donnâmes", "lavâtes", "tombèrent", "aidèrent"];
+var passeSimpleDeuxiemeGroupe = ["finis", "finis", "finit", "finit", "finîmes", "fînites", "finirent", "finirent"];
+var passeSimpleDeuxiemeGroupeVerbesDifferents = ["franchis", "rugis", "réussit", "réfléchit", "applaudîmes", "aplatîtes", "réagirent", "embellirent"];
+var passeSimpleVenir = ["vins", "vins", "vint", "vint", "vînmes", "vîntes", "vinrent", "vinrent"];
+var passeSimplePrendre = ["pris", "pris", "prit", "prit", "prîmes", "prîtes", "prirent", "prirent"];
+var passeSimpleVouloir = ["voulus", "voulus", "voulut", "voulut", "voulûmes", "voulûtes", "voulurent", "voulurent"];
+var passeSimpleFaire = ["fis", "fis", "fit", "fit", "fîmes", "fîtes", "firent", "firent"];
+var passeSimpleAller = ["allai", "allas", "alla", "alla", "allâmes", "allâtes", "allèrent", "allèrent"];
+var passeSimpleDire = ["dis", "dis", "dit", "dit", "dîmes", "dîtes", "dirent", "dirent"];
+var passeSimplePouvoir = ["pus", "pus", "put", "put", "pûmes", "pûtes", "purent", "purent"];
+var passeSimpleVoir = ["vis", "vis", "vit", "vit", "vîmes", "vîtes", "virent", "virent"];
+var plusqueparfaitEtre = ["avais été", "avais été", "avait été", "avait été", "avions été", "aviez été", "avaient été", "avaient été"];
+var plusqueparfaitAvoir = ["avais eu", "avais eu", "avait eu", "avait eu", "avions eu", "aviez eu", "avaient eu", "avaient eu"];
+var plusqueparfaitPremierGroupe = ["avais chanté", "avais chanté", "avait chanté", "avait chanté", "avions chanté", "aviez chanté", "avaient chanté", "avaient chanté"];
+var plusqueparfaitPremierGroupeVerbesDifferents = ["avais chanté", "avais parlé", "avait regardé", "avait joué", "avions donné", "aviez lavé", "avaient aidé", "avaient promené"];
+var plusqueparfaitDeuxiemeGroupe = ["avais fini", "avais fini", "avait fini", "avait fini", "avions fini", "aviez fini", "avaient fini", "avaient fini"];
+var plusqueparfaitDeuxiemeGroupeVerbesDifferents = ["avais franchi", "avais rugi", "avait réussi", "avait réfléchi", "avions applaudi", "aviez aplati", "avaient réagi", "avaient embelli"];
+var plusqueparfaitVenir = ["étais venu(e)", "étais venu(e)", "était venu", "était venue", "étions venu(e)s", "étiez venu(e)s", "étaient venus", "étaient venues"];
+var plusqueparfaitPrendre = ["avais pris", "avais pris", "avait pris", "avait pris", "avions pris", "aviez pris", "avaient pris", "avaient pris"];
+var plusqueparfaitVouloir = ["avais voulu", "avais voulu", "avait voulu", "avait voulu", "avions voulu", "aviez voulu", "avaient voulu", "avaient voulu"];
+var plusqueparfaitFaire = ["avais fait", "avais fait", "avait fait", "avait fait", "avions fait", "aviez fait", "avaient fait", "avaient fait"];
+var plusqueparfaitAller = ["étais allé(e)", "étais allé(e)", "était allé", "était allée", "étions allé(e)s", "étiez allé(e)s", "étaient allés", "étaient allées"];
+var plusqueparfaitDire = ["avais dit", "avais dit", "avait dit", "avait dit", "avions dit", "aviez dit", "avaient dit", "avaient dit"];
+var plusqueparfaitPouvoir = ["avais pu", "avais pu", "avait pu", "avait pu", "avions pu", "aviez pu", "avaient pu", "avaient pu"];
+var plusqueparfaitVoir = ["avais vu", "avais vu", "avait vu", "avait vu", "avions vu", "aviez vu", "avaient vu", "avaient vu"];
 
 /*****************
  * CREATION HTML *
@@ -151,8 +187,13 @@ function Select(sujet, verbe) {
 	}
 
 
-const selectionNiveau = document.getElementById('niveau').addEventListener('change', ($event) => {
+const selectionNiveauCPCE = document.getElementById('progressionCPCE').addEventListener('change', ($event) => {
 	switch ($event.target.value) {
+		case 'progCP':
+			effacer();
+			effacerBases();
+			effacerInputBases ();
+			break;
 		case 'imparfaitEtre':
 			Select(pronomsElide, imparfaitEtre);
 			break;
@@ -300,7 +341,124 @@ const selectionNiveau = document.getElementById('niveau').addEventListener('chan
 		}
 	});
 
+const selectionNiveauCM1 = document.getElementById('progressionCM').addEventListener('change', ($event) => {
+	switch ($event.target.value) {
+		case 'progCM':
+			effacer();
+			effacerBases();
+			effacerInputBases ();
+			break;			
+		case 'imparfaitdeuxiemeGroupe':
+			Select(pronoms, imparfaitdeuxiemeGroupe);
+			break;
+		case 'imparfaitdeuxiemeGroupeVerbesDifferents':
+			Select(pronoms, imparfaitdeuxiemeGroupeVerbesDifferents);
+			break;			
+		case 'passeComposedeuxiemeGroupe':
+			Select(pronomsElide, passeComposedeuxiemeGroupe);
+			break;
+		case 'passeComposedeuxiemeGroupeVerbesDifferents':
+			Select(pronomsElide, passeComposeDeuxiemeGroupeVerbesDifferents);
+			break;		
+		case 'presentdeuxiemeGroupe':
+			Select(pronoms, presentDeuxiemeGroupe);
+			break;
+		case 'presentdeuxiemeGroupeVerbesDifferents':
+			Select(pronoms, presentDeuxiemeGroupeVerbesDifferents);
+			break;			
+		case 'futurdeuxiemeGroupe':
+			Select(pronoms, futurDeuxiemeGroupe);
+			break;
+		case 'futurdeuxiemeGroupeVerbesDifferents':
+			Select(pronoms, futurDeuxiemeGroupeVerbesDifferents);
+			break;			
+		case 'passeSimpleEtre':
+			Select(pronoms, passeSimpleEtre);
+			break;
+		case 'passeSimpleAvoir':
+			Select(pronomsElide, passeSimpleAvoir);
+			break;			
+		case 'passeSimplePremierGroupe':
+			Select(pronomsElide, passeSimplePremierGroupe);
+			break;
+		case 'passeSimplePremierGroupeVerbesDifferents':
+			Select(pronomsElide, passeSimplePremierGroupeVerbesDifferents);
+			break;		
+		case 'passeSimpleDeuxiemeGroupe':
+			Select(pronoms, passeSimpleDeuxiemeGroupe);
+			break;
+		case 'passeSimpleDeuxiemeGroupeVerbesDifferents':
+			Select(pronoms, passeSimpleDeuxiemeGroupeVerbesDifferents);
+			break;			
+		case 'passeSimpleFaire':
+			Select(pronoms, passeSimpleFaire);
+			break;
+		case 'passeSimpleAller':
+			Select(pronomsElide, passeSimpleAller);
+			break;
+		case 'passeSimpleDire':
+			Select(pronoms, passeSimpleDire);
+			break;
+		case 'passeSimpleVenir':
+			Select(pronoms, passeSimpleVenir);
+			break;
+		case 'passeSimplePouvoir':
+			Select(pronoms, passeSimplePouvoir);
+			break;
+		case 'passeSimpleVoir':
+			Select(pronoms, passeSimpleVoir);
+			break;
+		case 'passeSimpleVouloir':
+			Select(pronoms, passeSimpleVouloir);
+			break;
+		case 'PasseSimplePrendre':
+			Select(pronoms, passeSimplePrendre);
+			break;
 
+		case 'plusqueparfaitEtre':
+			Select(pronomsElide, plusqueparfaitEtre);
+			break;
+		case 'plusqueparfaitAvoir':
+			Select(pronomsElide, plusqueparfaitAvoir);
+			break;			
+		case 'plusqueparfaitPremierGroupe':
+			Select(pronomsElide, plusqueparfaitPremierGroupe);
+			break;
+		case 'plusqueparfaitPremierGroupeVerbesDifferents':
+			Select(pronomsElide, plusqueparfaitPremierGroupeVerbesDifferents);
+			break;		
+		case 'plusqueparfaitDeuxiemeGroupe':
+			Select(pronomsElide, plusqueparfaitDeuxiemeGroupe);
+			break;
+		case 'plusqueparfaitDeuxiemeGroupeVerbesDifferents':
+			Select(pronomsElide, plusqueparfaitDeuxiemeGroupeVerbesDifferents);
+			break;			
+		case 'plusqueparfaitFaire':
+			Select(pronomsElide, plusqueparfaitFaire);
+			break;
+		case 'plusqueparfaitAller':
+			Select(pronomsElide, plusqueparfaitAller);
+			break;
+		case 'plusqueparfaitDire':
+			Select(pronomsElide, plusqueparfaitDire);
+			break;
+		case 'plusqueparfaitVenir':
+			Select(pronomsElide, plusqueparfaitVenir);
+			break;
+		case 'plusqueparfaitPouvoir':
+			Select(pronomsElide, plusqueparfaitPouvoir);
+			break;
+		case 'plusqueparfaitVoir':
+			Select(pronomsElide, plusqueparfaitVoir);
+			break;
+		case 'plusqueparfaitVouloir':
+			Select(pronomsElide, plusqueparfaitVouloir);
+			break;
+		case 'plusqueparfaitPrendre':
+			Select(pronomsElide, plusqueparfaitPrendre);
+			break;
+		}
+	});
 
 /********************
  * MISE A ZERO html *
